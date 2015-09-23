@@ -19,6 +19,8 @@ On server-side:
 * Glassfish 4.1 with EclipseLink JPA implementation
 * PostgreSQL 9.2 with PostGIS 2
 
+Visit the [Wiki](https://github.com/fpennica/audb-webgis/wiki) for more info.
+
 Floods table
 
 ![screen2](http://www.urbisit.it/images/audb/2014-12-16_14_42_08-AUDB.png "Floods table")
