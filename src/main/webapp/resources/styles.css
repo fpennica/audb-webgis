@@ -1,0 +1,133 @@
+/*
+Copyright (C) 2014 Francesco Pennica <francesco.pennica at igag.cnr.it>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+/* 
+    Created on : 7-ott-2014, 12.06.17
+    Author     : Francesco Pennica <francesco.pennica at igag.cnr.it>
+*/
+
+.banner {
+    background-image: url(images/logo/banner.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+/* Rimuove gli spazi fra gli accordion */
+.x-panel {
+    margin: 0;
+}
+.x-accordion-layout-ct {
+padding: 0;
+}
+.x-accordion-item:not(:last-child) {
+    border-bottom: 1px solid #73a3e0;
+}
+
+.x-action-col-cell img {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+}
+
+.zoomTo {
+    background:url('images/icons/maptoolbar/magnifier_zoom_in.png') 0 no-repeat !important;
+}
+
+.delete {
+    background:url('images/icons/delete.png') 0 no-repeat !important;
+}
+
+.admin{
+    background:url(images/icons/admin.png) 0 no-repeat !important;
+}
+
+.addnew {
+    background:url(images/icons/addnew.png) 0 no-repeat !important;
+    
+}
+
+.export {
+    background:url(images/icons/export.png) 0 no-repeat !important;
+    
+}
+
+.go{
+    background:url(images/icons/go.png) 0 no-repeat !important;
+}
+
+.refresh{
+    background:url(images/icons/refresh.png) 0 no-repeat !important;
+}
+  
+.save{
+    background:url(images/icons/save.png) 0 no-repeat !important;
+}
+
+.search {
+    background:url(images/icons/search.png) 0 no-repeat !important;
+    
+}
+
+.logoff{
+    background:url(images/icons/logoff.png) 0 no-repeat !important;
+}
+
+.users {
+    background:url(images/icons/users.png) 0 no-repeat !important;    
+}
+
+.company {
+    background:url(images/icons/company.png) 0 no-repeat !important;    
+}
+
+.project {
+    background:url(images/icons/project.png) 0 no-repeat !important;    
+}
+
+.task {
+    background:url(images/icons/task.png) 0 no-repeat !important;    
+}
+
+/* Main */
+.layers {
+    background:url(images/icons/layers.png) 0 no-repeat !important;   
+}
+
+.table {
+    background:url(images/icons/table.png) 0 no-repeat !important;   
+}
+
+/* Menu */
+.pan-norm {
+    background:url(images/icons/maptoolbar/pan.png) 0 no-repeat !important;    
+}
+
+/* Map Toolbar */
+.pan {
+    background:url(images/icons/maptoolbar/pan_white.png) 0 no-repeat !important;    
+}
+
+.maxExtent {
+    background:url(images/icons/maptoolbar/page_world.png) 0 no-repeat !important;    
+}
+
+.zoomPrevious {
+    background:url(images/icons/maptoolbar/resultset_previous.png) 0 no-repeat !important;    
+}
+
+.zoomNext {
+    background:url(images/icons/maptoolbar/resultset_next.png) 0 no-repeat !important;    
+}

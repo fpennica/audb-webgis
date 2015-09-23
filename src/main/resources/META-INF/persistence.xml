@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="audbPU" transaction-type="JTA">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <jta-data-source>jdbc/audb</jta-data-source>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        
+        <!-- disabilita completamente la cache per evitare problemi (ad es. modificando
+            direttamente un record sul db, l'entity gestita dall persistence context
+            non verrebbe aggiornata). Andrebbe approfondito se si può configurare la
+            cache in modo da non avere questi problemi http://wiki.eclipse.org/EclipseLink/Examples/JPA/Caching -->
+        <shared-cache-mode>NONE</shared-cache-mode>
+        
+        <properties>
+            <!-- this is absolutely critical to ensure correct integration of transaction manager!!! -->
+            <property name="eclipselink.target-server" value="SunAS9"/>
+            <property name="eclipselink.logging.level" value="INFO"/>        
+        </properties>
+    </persistence-unit>
+</persistence>

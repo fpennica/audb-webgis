@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds" >
+    <contextName>AUDB</contextName>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!-- encoders are assigned the type
+        ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="it.cnr.igag.audb" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="it.cnr.igag.audb.dao" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="it.cnr.igag.audb.domain" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="it.cnr.igag.audb.service" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+    <logger name="it.cnr.igag.audb.web" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+    
+    <!-- the level of the root level is set to DEBUG by default -->
+    <root level="INFO">          
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

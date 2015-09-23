@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>/WEB-INF/applicationContext.xml</param-value>
+    </context-param>
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <session-config>
+        <session-timeout>30</session-timeout>
+        <cookie-config>
+            <name>JSESSIONID_AUDB</name>
+        </cookie-config>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    
+    <!-- Open proxy to circumvent cross-domain XmlHTTPRequest restrictions. -->
+    <servlet>
+        <servlet-name>GwtOpenlayersProxy</servlet-name>
+        <servlet-class>it.cnr.igag.audb.web.GwtOpenLayersProxyServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>GwtOpenlayersProxy</servlet-name>
+        <url-pattern>/gwtOpenLayersProxy/*</url-pattern>
+    </servlet-mapping>
+    
+</web-app>

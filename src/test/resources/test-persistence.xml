@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="audbPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>it.cnr.igag.audb.domain.AllagamentiFoto</class>
+        <class>it.cnr.igag.audb.domain.AllagamentiOsserv</class>
+        <class>it.cnr.igag.audb.domain.AllagamentiOsservFonti</class>
+        <class>it.cnr.igag.audb.domain.CodiceIstat</class>
+        <class>it.cnr.igag.audb.domain.Mappe</class>
+        <class>it.cnr.igag.audb.domain.Progetto</class>
+        <class>it.cnr.igag.audb.domain.Utente</class>
+        <class>it.cnr.igag.audb.domain.UtenteProgetto</class>
+        <class>it.cnr.igag.audb.domain.UtenteProgettoPK</class>
+        <class>it.cnr.igag.audb.domain.ValoriDurata</class>
+        <class>it.cnr.igag.audb.domain.ValoriEstensione</class>
+        <class>it.cnr.igag.audb.domain.ValoriProfondita</class>
+    </persistence-unit>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+        <property name="eclipselink.logging.level" value="WARNING"/>
+    </properties>
+</persistence>
