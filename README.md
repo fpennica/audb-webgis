@@ -18,6 +18,7 @@ On server-side:
 * Spring 4.0.6
 * Glassfish 4.1 with EclipseLink JPA implementation
 * PostgreSQL 9.2 with PostGIS 2
+* GeoServer for WMS layers
 
 Visit the [Wiki](https://github.com/fpennica/audb-webgis/wiki) for more info.
 
