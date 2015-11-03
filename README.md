@@ -22,26 +22,30 @@ On server-side:
 
 Visit the [Wiki](https://github.com/fpennica/audb-webgis/wiki) for more info.
 
-Floods table
+Feature filtering by date and project:
 
-![screen2](http://www.urbisit.it/images/audb/2014-12-16_14_42_08-AUDB.png "Floods table")
+![screen2](http://www.urbisit.it/images/audb/2014-12-16_15_01_39-AUDB.png "Feature filtering")
 
+Floods table:
 
-Detail view
-
-![screen3](http://www.urbisit.it/images/audb/2014-12-16_14_52_35-AUDB.png "Detail view")
-
-
-Street view
-
-![screen4](http://www.urbisit.it/images/audb/2014-12-16_14_56_25-AUDB.png "Street view")
+![screen3](http://www.urbisit.it/images/audb/2014-12-16_14_42_08-AUDB.png "Floods table")
 
 
-Data editing
+Detail view:
 
-![screen5](http://www.urbisit.it/images/audb/2014-12-16_15_20_37-AUDB.png "Data editing")
+![screen4](http://www.urbisit.it/images/audb/2014-12-16_14_52_35-AUDB.png "Detail view")
 
 
-User management
+Street view:
 
-![screen6](http://www.urbisit.it/images/audb/2014-12-16_15_31_29-AUDB.png "User management")
+![screen5](http://www.urbisit.it/images/audb/2014-12-16_14_56_25-AUDB.png "Street view")
+
+
+Data editing:
+
+![screen6](http://www.urbisit.it/images/audb/2014-12-16_15_20_37-AUDB.png "Data editing")
+
+
+User management:
+
+![screen7](http://www.urbisit.it/images/audb/2014-12-16_15_31_29-AUDB.png "User management")
